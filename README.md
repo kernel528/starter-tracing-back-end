@@ -9,9 +9,9 @@ As you work through the "Connecting it all: Tracing Errors" checkpoint, you will
 The table below describes the files and folders in the starter code:
 
 | Folder/file path | Description                                                                      |
-| ---------------- | -------------------------------------------------------------------------------- | |
+| ---------------- | -------------------------------------------------------------------------------- | 
 | `knexfile.js` | Knex configuration file.	|
-| `src/app.js` | Directs requests to the appropriate routers.  	||
+| `src/app.js` | Directs requests to the appropriate routers.  	|
 | `src/articles/articles.controller.js` | The controller for the articles resource	|
 | `src/articles/articles.router.js` | The router for the articles resource	|
 | `src/articles/articles.service.js` | The service for the articles resource	|
@@ -20,7 +20,7 @@ The table below describes the files and folders in the starter code:
 | `src/db/seeds` | A folder that contains the knex see data	|
 | `src/errors` |	 folder where you will find several functions for handle various errors. |
 | `src/server.js`  | Starts the server on `localhost:5000` by default.                                |
-| `.env.sample`    | A sample environment configuration file
+| `.env.sample`    | A sample environment configuration file |
 
 This starter code closely follows the best practices and patterns established in the Robust Server Structure module.
 
