@@ -239,6 +239,7 @@ To address all issues (including breaking changes), run:
 Run `npm audit` for details.
 
 ```
+- Install pretty print capability: `npm install pino-pretty@4`
 - 
 
 
