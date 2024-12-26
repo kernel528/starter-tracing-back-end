@@ -145,4 +145,101 @@
     Using environment: development
     Ran 1 seed files
     ```
+## Module Steps
+- Install [pino-http](https://github.com/pinojs/pino-http) and update src/app.js (module steps)
+```aiignore
+: npm install pino-http@5
+
+added 2 packages, changed 5 packages, and audited 374 packages in 3s
+
+15 packages are looking for funding
+  run `npm fund` for details
+
+29 vulnerabilities (4 low, 9 moderate, 15 high, 1 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+```
+- Install `nanoid` package to convert numeric pino loglevel codes to string.  Create the src/config/logger.js and update src/app.js.
+```aiignore
+npm install nano@3
+: npm install pino-http@5
+
+added 2 packages, changed 5 packages, and audited 374 packages in 3s
+
+15 packages are looking for funding
+  run `npm fund` for details
+
+29 vulnerabilities (4 low, 9 moderate, 15 high, 1 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+# joe @ jedi in ~/github/kernel528/Chegg-Skills/backend-web-dev-cert/Module_3-Backend-Web-Development/3.12_Putting-it-all-Together/06-Practice-Tracing-Errors/starter-tracing-back-end on git:initial-setup x [2024-12-26 16:43:14]
+: git s
+On branch initial-setup
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Notes.md
+        modified:   package-lock.json
+        modified:   package.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+# joe @ jedi in ~/github/kernel528/Chegg-Skills/backend-web-dev-cert/Module_3-Backend-Web-Development/3.12_Putting-it-all-Together/06-Practice-Tracing-Errors/starter-tracing-back-end on git:initial-setup x [2024-12-26 16:44:55]
+: git add package*
+# joe @ jedi in ~/github/kernel528/Chegg-Skills/backend-web-dev-cert/Module_3-Backend-Web-Development/3.12_Putting-it-all-Together/06-Practice-Tracing-Errors/starter-tracing-back-end on git:initial-setup x [2024-12-26 16:45:02]
+: git commit -m "Updated with pino-http package."
+[initial-setup 0954f4a] Updated with pino-http package.
+ 2 files changed, 40 insertions(+), 22 deletions(-)
+# joe @ jedi in ~/github/kernel528/Chegg-Skills/backend-web-dev-cert/Module_3-Backend-Web-Development/3.12_Putting-it-all-Together/06-Practice-Tracing-Errors/starter-tracing-back-end on git:initial-setup x [2024-12-26 16:45:14]
+: npm install nano@3
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'hawk@0.10.2',
+npm warn EBADENGINE   required: { node: '0.8.x' },
+npm warn EBADENGINE   current: { node: 'v22.5.1', npm: '10.8.2' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'hoek@0.7.6',
+npm warn EBADENGINE   required: { node: '0.8.x' },
+npm warn EBADENGINE   current: { node: 'v22.5.1', npm: '10.8.2' }
+npm warn EBADENGINE }
+npm warn deprecated node-uuid@1.4.8: Use uuid module instead
+npm warn deprecated sntp@0.1.2: This module moved to @hapi/sntp. Please make sure to switch over as this distribution is no longer supported and may contain bugs and critical security issues.
+npm warn deprecated boom@0.3.1: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
+npm warn deprecated hoek@0.7.6: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
+npm warn deprecated cryptiles@0.1.0: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
+npm warn deprecated hoek@0.4.2: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
+npm warn deprecated hoek@0.4.2: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
+npm warn deprecated hawk@0.10.2: This module moved to @hapi/hawk. Please make sure to switch over as this distribution is no longer supported and may contain bugs and critical security issues.
+npm warn deprecated request@2.16.6: request has been deprecated, see https://github.com/request/request/issues/3142
+
+added 26 packages, and audited 400 packages in 5s
+
+15 packages are looking for funding
+  run `npm fund` for details
+
+41 vulnerabilities (4 low, 11 moderate, 23 high, 3 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+```
+- 
+
+
   
